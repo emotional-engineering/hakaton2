@@ -15,14 +15,14 @@ export function* handleFetchTableData() {
         console.log('//// resp /////');
         console.log(resp.data);
 
-        let data = []; // resp.data;
-
+        let data = resp.data;
+/*
         data[0] = JSON.parse(JSON.stringify(resp.data[0]));
 
         data[1] = JSON.parse(JSON.stringify(resp.data[0]));
         data[1].id = 1;
         data[1].fullName = 'КЦ-2';
-
+*/
         console.log('//// data /////');
         console.log(data);
 

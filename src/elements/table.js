@@ -10,7 +10,7 @@ import 'fixed-data-table-2/dist/fixed-data-table.css';
 
 const CustomCell = ({percent, rowIndex, columnKey}) => {
 
-    if (!percent) return <div>NA</div>
+    if (percent === false) return <div>NA</div>
 
     return <div className='tableCell'
         key={rowIndex + '_' + columnKey}
